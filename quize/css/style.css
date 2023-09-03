@@ -1,0 +1,74 @@
+/* Loading Speansr */
+body{
+  background-color: black; 
+  overflow: hidden;
+}
+
+#loading{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    position: fixed;
+    z-index: 9999999;
+}
+.spinner {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    margin: 250px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+/* Loading Speansr */
+#searchSection input::placeholder,
+#contactUs input::placeholder{
+  color: #50757D;
+}
+#saidbar ul li ,#openClose,.icon>*, .shared>*{
+  cursor: pointer;
+}
+.inner{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.layer{
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(244, 227, 200, 0.8);
+  transition: 0.5s;
+}
+.inner:hover .layer {
+  top: 0;
+}                    
+
+.ingredBox{
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+}

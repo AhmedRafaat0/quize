@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <!-- Start SaidBar -->
+    <div id="saidbar" class="d-flex position-fixed top-0 bottom-0 z-3">
+        <div id="innerSaidbar" class="bg-black text-white p-4 d-flex flex-column justify-content-between">
+            <ul class="list-unstyled">
+                <li id="search" class="py-2">Search</li>
+                <li id="categories" class="py-2">Categories</li>
+                <li id="area" class="py-2">Area</li>
+                <li id="ingredients" class="py-2">Ingredients</li>
+                <li id="contact" class="py-2">Contact Us</li>
+            </ul>
+            <div class="footer">
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights<br/>Reserved.</p>
+            </div>
+        </div>
+        <div id="outSaidbar" class="d-flex flex-column align-items-center justify-content-between py-4 px-2 bg-white">
+            <img style="width: 50px;" src="image/logo.png" alt="">
+            <div id="openClose"><i class="fa-solid fa-2x fa-align-justify"></i></div>
+            <div class="shared">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <!-- End SaidBar -->
+
+    <!-- Start Search Section -->
+    <section class=" d-none searchSection" id="searchSection">
+        <div class="container w-100 d-flex justify-content-center align-items-center flex-nowrap gap-5 pt-5">
+            <div class="w-50">
+                <input class="search1 form-control bg-transparent p-2 w-100" type="text" placeholder="Search BY Name"/>
+            </div>
+            <div class="w-50">
+                <input class="search2 form-control bg-transparent p-2 w-100" maxlength="1" type="text" placeholder="Search BY First Letter"/>
+            </div>
+        </div>
+    </section>
+    <section class="container searchSection">
+        <div class="container row myRow1"></div>
+    </section>
+    <!-- End Search Section -->
+
+    <!-- Start Search Meal Section -->
+    <section id="mainSection">
+        <div class="container py-5">
+            <div id="myRow" class="row">
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Search Meal Section -->
+    <section id="contactUs" class="d-none mt-5">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                    <input style="width: 45%;" class="form-control p-2" type="text" placeholder="Enter Your Name">
+                    <input style="width: 45%;" class="form-control p-2" type="text" placeholder="Enter Your Email">
+                    <input style="width: 45%;" class="form-control p-2" type="text" placeholder="Enter Your Phone">
+                    <input style="width: 45%;" class="form-control p-2" type="text" placeholder="Enter Your Age">
+                    <input style="width: 45%;" class="form-control p-2" type="text" placeholder="Enter Your Password">
+                    <input style="width: 45%;" class="form-control p-2" type="text" placeholder="Repassword">
+                    <div class="d-flex justify-content-center w-100">
+                        <button class="btn btn-outline-danger mt-2">Submit</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
